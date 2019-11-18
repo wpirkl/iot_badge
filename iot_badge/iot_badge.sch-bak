@@ -1,0 +1,198 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "IOT Badge"
+Date "2019-11-18"
+Rev "01"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Werner Pirkl"
+$EndDescr
+$Comp
+L SamacSys_Parts:113990582 IC?
+U 1 1 5DD29514
+P 3950 1800
+F 0 "IC?" H 4800 2065 50  0000 C CNN
+F 1 "MDBT50Q-1MV2" H 4800 1974 50  0000 C CNN
+F 2 "113990582" H 5500 1900 50  0001 L CNN
+F 3 "http://www.raytac.com/download/index.php?index_id=24" H 5500 1800 50  0001 L CNN
+F 4 "Bluetooth Modules (802.15.1) MDBT50Q-1M nRF52840 Based BLE Module" H 5500 1700 50  0001 L CNN "Description"
+F 5 "2" H 5500 1600 50  0001 L CNN "Height"
+F 6 "713-113990582" H 5500 1500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=713-113990582" H 5500 1400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Seeed Studio" H 5500 1300 50  0001 L CNN "Manufacturer_Name"
+F 9 "113990582" H 5500 1200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3950 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C?
+U 1 1 5DD35C4D
+P 1000 1700
+F 0 "C?" H 1178 1746 50  0000 L CNN
+F 1 "10uF" H 1178 1655 50  0000 L CNN
+F 2 "" H 1000 1700 50  0001 C CNN
+F 3 "~" H 1000 1700 50  0001 C CNN
+	1    1000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C?
+U 1 1 5DD36F4C
+P 1650 1700
+F 0 "C?" H 1828 1746 50  0000 L CNN
+F 1 "10uF" H 1828 1655 50  0000 L CNN
+F 2 "" H 1650 1700 50  0001 C CNN
+F 3 "~" H 1650 1700 50  0001 C CNN
+	1    1650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C?
+U 1 1 5DD38DC5
+P 2400 1700
+F 0 "C?" H 2578 1746 50  0000 L CNN
+F 1 "100nF" H 2578 1655 50  0000 L CNN
+F 2 "" H 2400 1700 50  0001 C CNN
+F 3 "~" H 2400 1700 50  0001 C CNN
+	1    2400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DD3947A
+P 6150 2000
+F 0 "R?" V 5943 2000 50  0000 C CNN
+F 1 "22R" V 6034 2000 50  0000 C CNN
+F 2 "" V 6080 2000 50  0001 C CNN
+F 3 "~" H 6150 2000 50  0001 C CNN
+	1    6150 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DD39B37
+P 6450 2100
+F 0 "R?" V 6243 2100 50  0000 C CNN
+F 1 "22R" V 6334 2100 50  0000 C CNN
+F 2 "" V 6380 2100 50  0001 C CNN
+F 3 "~" H 6450 2100 50  0001 C CNN
+	1    6450 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Battery_Management:MCP73831-2-OT U?
+U 1 1 5DD3A253
+P 11950 1850
+F 0 "U?" H 11700 2100 50  0000 C CNN
+F 1 "MCP73831-2-OT" H 12350 1600 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 12000 1600 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 11800 1800 50  0001 C CNN
+	1    11950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle J?
+U 1 1 5DD3AC55
+P 8900 2650
+F 0 "J?" H 9007 3917 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 9007 3826 50  0000 C CNN
+F 2 "" H 9050 2650 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 9050 2650 50  0001 C CNN
+	1    8900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5DD3FC73
+P 13950 1750
+F 0 "J?" H 14030 1742 50  0000 L CNN
+F 1 "Conn_01x02" H 14030 1651 50  0000 L CNN
+F 2 "" H 13950 1750 50  0001 C CNN
+F 3 "~" H 13950 1750 50  0001 C CNN
+	1    13950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5DD405FC
+P 10950 1850
+F 0 "C?" H 11068 1896 50  0000 L CNN
+F 1 "4.7uF" H 11068 1805 50  0000 L CNN
+F 2 "" H 10988 1700 50  0001 C CNN
+F 3 "~" H 10950 1850 50  0001 C CNN
+	1    10950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DD451C7
+P 11400 2400
+F 0 "R?" H 11470 2446 50  0000 L CNN
+F 1 "2k" H 11470 2355 50  0000 L CNN
+F 2 "" V 11330 2400 50  0001 C CNN
+F 3 "~" H 11400 2400 50  0001 C CNN
+	1    11400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5DD456D5
+P 11400 2700
+F 0 "#PWR?" H 11400 2450 50  0001 C CNN
+F 1 "GNDD" H 11404 2545 50  0000 C CNN
+F 2 "" H 11400 2700 50  0001 C CNN
+F 3 "" H 11400 2700 50  0001 C CNN
+	1    11400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 5DD46AC0
+P 9750 1550
+F 0 "#PWR?" H 9750 1400 50  0001 C CNN
+F 1 "VBUS" H 9765 1723 50  0000 C CNN
+F 2 "" H 9750 1550 50  0001 C CNN
+F 3 "" H 9750 1550 50  0001 C CNN
+	1    9750 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 5DD4714B
+P 10950 1600
+F 0 "#PWR?" H 10950 1450 50  0001 C CNN
+F 1 "VBUS" H 10965 1773 50  0000 C CNN
+F 2 "" H 10950 1600 50  0001 C CNN
+F 3 "" H 10950 1600 50  0001 C CNN
+	1    10950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 5DD4759B
+P 11950 1450
+F 0 "#PWR?" H 11950 1300 50  0001 C CNN
+F 1 "VBUS" H 11965 1623 50  0000 C CNN
+F 2 "" H 11950 1450 50  0001 C CNN
+F 3 "" H 11950 1450 50  0001 C CNN
+	1    11950 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5DD47DD8
+P 13150 1900
+F 0 "C?" H 13268 1946 50  0000 L CNN
+F 1 "4.7uF" H 13268 1855 50  0000 L CNN
+F 2 "" H 13188 1750 50  0001 C CNN
+F 3 "~" H 13150 1900 50  0001 C CNN
+	1    13150 1900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
