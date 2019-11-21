@@ -22,6 +22,26 @@ X PROG 5 -400 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# Connector_Conn_01x02_Male
+#
+DEF Connector_Conn_01x02_Male J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x02_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+X Pin_2 2 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_USB_B_Micro
 #
 DEF Connector_USB_B_Micro J 0 40 Y Y 1 F N
@@ -185,11 +205,11 @@ F8 "Keystone Electronics" 650 -500 50 H I L CNN "Manufacturer_Name"
 F9 "1042P" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
 DRAW
 P 5 0 1 6 200 100 600 100 600 -300 200 -300 200 100 N
-X 1 1 0 0 200 R 50 50 0 0 U
-X 2 2 0 -100 200 R 50 50 0 0 U
-X 3 3 0 -200 200 R 50 50 0 0 U
-X 4 4 800 0 200 L 50 50 0 0 U
-X 5 5 800 -100 200 L 50 50 0 0 U
+X 1 1 0 0 200 R 50 50 0 0 N
+X 2 2 0 -100 200 R 50 50 0 0 N
+X 3 3 0 -200 200 R 50 50 0 0 N
+X - 4 800 0 200 L 50 50 0 0 U
+X + 5 800 -100 200 L 50 50 0 0 U
 ENDDRAW
 ENDDEF
 #
@@ -323,6 +343,32 @@ X NO_2 B2 1200 -100 200 L 50 50 0 0 U
 ENDDRAW
 ENDDEF
 #
+# SamacSys_Parts_PMDPB30XN,115
+#
+DEF SamacSys_Parts_PMDPB30XN,115 Q 0 30 Y Y 1 F N
+F0 "Q" 950 300 50 H V L CNN
+F1 "SamacSys_Parts_PMDPB30XN,115" 950 200 50 H V L CNN
+F2 "PMDPB30XN115" 950 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/PMDPB30XN,115.pdf" 950 0 50 H I L CNN
+F4 "MOSFET PMDPB30XN/HUSON6/REEL 7\" Q1/T1" 950 -100 50 H I L CNN "Description"
+F5 "0.65" 950 -200 50 H I L CNN "Height"
+F6 "771-PMDPB30XN115" 950 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=771-PMDPB30XN115" 950 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Nexperia" 950 -500 50 H I L CNN "Manufacturer_Name"
+F9 "PMDPB30XN,115" 950 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -400 200 -400 200 100 N
+X S1 1 0 0 200 R 50 50 0 0 U
+X G1 2 0 -100 200 R 50 50 0 0 U
+X D2_1 3 0 -200 200 R 50 50 0 0 U
+X S2 4 0 -300 200 R 50 50 0 0 U
+X G2 5 1100 0 200 L 50 50 0 0 U
+X D1_1 6 1100 -100 200 L 50 50 0 0 U
+X D1_2 7 1100 -200 200 L 50 50 0 0 U
+X D2_2 8 1100 -300 200 L 50 50 0 0 U
+ENDDRAW
+ENDDEF
+#
 # SamacSys_Parts_XCL210C331GR-G
 #
 DEF SamacSys_Parts_XCL210C331GR-G PS 0 30 Y Y 1 F N
@@ -346,6 +392,102 @@ X VIN 6 1500 0 200 L 50 50 0 0 U
 X L1 7 1500 -100 200 L 50 50 0 0 U
 X L2 8 1500 -200 200 L 50 50 0 0 U
 X THERMAL_PAD 9 1500 -300 200 L 50 50 0 0 U
+ENDDRAW
+ENDDEF
+#
+# Sensor_Motion_ICM-20602
+#
+DEF Sensor_Motion_ICM-20602 U 0 20 Y Y 1 F N
+F0 "U" -400 450 50 H V L CNN
+F1 "Sensor_Motion_ICM-20602" 400 450 50 H V C CNN
+F2 "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y" 0 250 50 H I C CNN
+F3 "" 50 950 50 H I C CNN
+$FPLIST
+ LGA*3x3mm*P0.5mm*
+$ENDFPLIST
+DRAW
+S -400 400 400 -400 0 1 10 f
+X VDDIO 1 100 500 100 D 50 50 1 1 W
+X GND 10 0 -500 100 U 50 50 1 1 P N
+X GND 11 0 -500 100 U 50 50 1 1 P N
+X GND 12 0 -500 100 U 50 50 1 1 P N
+X GND 13 0 -500 100 U 50 50 1 1 W
+X REGOUT 14 500 -100 100 L 50 50 1 1 P
+X GND 15 0 -500 100 U 50 50 1 1 P N
+X VDD 16 0 500 100 D 50 50 1 1 W
+X SCL/SPC 2 -500 -100 100 R 50 50 1 1 I
+X SDA/SDI 3 -500 0 100 R 50 50 1 1 B
+X SAO/SD0 4 -500 100 100 R 50 50 1 1 B
+X ~CS 5 -500 -200 100 R 50 50 1 1 I
+X INT 6 500 100 100 L 50 50 1 1 O
+X RESV 7 -400 200 100 R 50 50 1 1 N N
+X FSYNC 8 500 0 100 L 50 50 1 1 I
+X GND 9 0 -500 100 U 50 50 1 1 P N
+ENDDRAW
+ENDDEF
+#
+# dk_PMIC-Battery-Management_BQ29700DSET
+#
+DEF dk_PMIC-Battery-Management_BQ29700DSET U 0 40 Y Y 1 F N
+F0 "U" -100 140 60 H V R CNN
+F1 "dk_PMIC-Battery-Management_BQ29700DSET" 20 -350 60 H V L CNN
+F2 "digikey-footprints:WFDFN-6_1.5x1.5mm" 200 200 60 H I L CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fbq2971" 200 300 60 H I L CNN
+F4 "296-37746-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "BQ29700DSET" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Battery Management" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fbq2971" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/BQ29700DSET/296-37746-1-ND/4840671" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC LITHIUM BATT PROTECT 6-SON" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 100 300 -300 0 1 0 f
+X NC 1 0 -200 100 R 50 50 1 1 N N
+X COUT 2 400 0 100 L 50 50 1 1 O
+X DOUT 3 400 -100 100 L 50 50 1 1 O
+X VSS 4 0 -400 100 U 50 50 1 1 W
+X BAT 5 0 200 100 D 50 50 1 1 W
+X V- 6 -300 0 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# dk_PMIC-Full-Half-Bridge-Drivers_DRV8833PWPR
+#
+DEF dk_PMIC-Full-Half-Bridge-Drivers_DRV8833PWPR U 0 20 Y Y 1 F N
+F0 "U" -300 550 60 H V C CNN
+F1 "dk_PMIC-Full-Half-Bridge-Drivers_DRV8833PWPR" -200 650 60 H V R CNN
+F2 "digikey-footprints:TSSOP-16-1EP_W4.40mm" 200 200 60 H I L CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fdrv8833" 200 300 60 H I L CNN
+F4 "296-29434-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "DRV8833PWPR" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Full, Half-Bridge Drivers" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fdrv8833" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/DRV8833PWPR/296-29434-1-ND/2743171" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC MOTOR DRIVER PAR 16HTSSOP" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -400 500 300 -400 0 1 0 f
+X nSLEEP 1 -500 -100 100 R 50 50 1 1 I
+X BIN2 10 -500 0 100 R 50 50 1 1 I
+X VCP 11 -500 400 100 R 50 50 1 1 B
+X VM 12 0 600 100 D 50 50 1 1 W
+X GND 13 0 -500 100 U 50 50 1 1 W
+X VINT 14 400 -300 100 L 50 50 1 1 P
+X AIN2 15 -500 200 100 R 50 50 1 1 I
+X AIN1 16 -500 300 100 R 50 50 1 1 I
+X GND 17 -100 -500 100 U 50 50 1 1 U
+X AOUT1 2 400 300 100 L 50 50 1 1 O
+X AISEN 3 -500 -200 100 R 50 50 1 1 B
+X AOUT2 4 400 200 100 L 50 50 1 1 O
+X BOUT2 5 400 0 100 L 50 50 1 1 O
+X BISEN 6 -500 -300 100 R 50 50 1 1 B
+X BOUT1 7 400 100 100 L 50 50 1 1 O
+X nFAULT 8 400 -100 100 L 50 50 1 1 O
+X BIN1 9 -500 100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
